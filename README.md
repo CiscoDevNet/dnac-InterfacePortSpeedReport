@@ -14,7 +14,7 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
 
 1. Let us start with reviewing the available DNA Center "Interfaces" API calls in **[Cisco documentation](https://developer.cisco.com/site/dna-center-rest-api/)** (Hint: Search for ***"Get all interfaces"*** under the ***"Devices"*** submenu). <br />
 
-2. From the Cisco documentation page, click on the ***"Get all interfaces"*** GET API call to get in-depth information about all the available data types. <br />
+2. From the **[Cisco documentation](https://developer.cisco.com/site/dna-center-rest-api/)** page, click on the ***"Get all interfaces"*** GET API call to get in-depth information about all the available data types. <br />
 ![json](images/newReport1.png?raw=true "Import JSON") <br />
 
 3. Review the available data (i.e., response) of this API call. Do you see any value that may help with?
