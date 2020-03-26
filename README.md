@@ -74,7 +74,7 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
     ```concole
     cd /tmp
     git clone https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-.git
-    cd dnac-InterfacePortSpeedReport
+    cd dnac-InterfacePortSpeedReport-
     ```
 
 ### Lab Initialization
@@ -85,7 +85,7 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
 <details>
           <summary>Sample Setup Output"</summary>
 
-      ```concole
+ ```concole
       Setting up the workstation environment for the lab.
 
       Creating Python 3 Virtual Environment
@@ -137,7 +137,7 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
       Setup complete.  To begin the lab run:
 
        source start
-     ```
+ ```
 </details>
 
 ### Lab Startup
