@@ -155,7 +155,7 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
   Activating Python Virtual Environment
   Opening Incognito browser windows for lab
  ```
-    </details>
+</details>
 
 9. To execute the script, copy and paste the following command in the terminal: <br />
 
