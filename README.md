@@ -186,7 +186,11 @@ An example of script execution: <br />
 ![alt text](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-/blob/master/newReport5.png)<br />
 
 ## Lab Decommission
-11. To end the Python virtual environment session, run the **`deactivate`** command.
+11. To end the Python virtual environment session, copy and paste the following command in the terminal: <br />
+
+     ```concole
+     deactivate
+      ```
 
 ## Technologies & Frameworks Used
 ### Cisco Products & Services:
