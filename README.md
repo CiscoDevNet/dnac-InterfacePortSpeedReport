@@ -7,14 +7,15 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
 ![json](images/story2.png?raw=true "Import JSON") <br />
 
 ### Objectives and Flow
-![json](images/lab2Flow?raw=true "Import JSON") <br />
+
+![json](images/lab2Flow.png?raw=true "Import JSON") <br />
 
 ## Description
 
 1. Let us start with reviewing the available DNA Center "Interfaces" API calls in **[Cisco documentation](https://developer.cisco.com/site/dna-center-rest-api/)** (Hint: Search for ***"Get all interfaces"*** under the ***"Devices"*** submenu). <br />
 
 2. From the Cisco documentation page, click on the ***"Get all interfaces"*** GET API call to get in-depth information about all the available data types. <br />
-![json](images/newReport1?raw=true "Import JSON") <br />
+![json](images/newReport1.png?raw=true "Import JSON") <br />
 
 3. Review the available data (i.e., response) of this API call. Do you see any value that may help with?
 
@@ -177,11 +178,11 @@ An example of script execution: <br />
 
 ## Script Overview
   * Prompt the user for Cisco DNA Center login information
-![json](images/newReport3?raw=true "Import JSON") <br />
+![json](images/newReport3.png?raw=true "Import JSON") <br />
   * Validate login information and get the Token key
-![json](images/newReport4?raw=true "Import JSON") <br />
+![json](images/newReport4.png?raw=true "Import JSON") <br />
   * Get the interfaces speed information and parse the date in a table format
-![json](images/newReport5?raw=true "Import JSON") <br />
+![json](images/newReport5.png?raw=true "Import JSON") <br />
 
 ## Lab Decommission
 11. To end the Python virtual environment session, copy and paste the following command in the terminal: <br />
