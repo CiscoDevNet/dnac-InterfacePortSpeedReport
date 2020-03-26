@@ -4,19 +4,17 @@ Ever wondered how to create a custom Cisco DNA Center report?  <br /> For exampl
 As part of this tutorial/repository, you will learn how to leverage the "Get All Interfaces" API call do build a custom/tailor-made report. <br />
 The generated data can be then uploaded/integrated with cross-solutions such as Spark, Qlik, SmartSheet, and others.  <br />
 
-![alt text](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-/blob/master/images/story2.png) <br />
+![json](images/story2.png?raw=true "Import JSON") <br />
 
 ### Objectives and Flow
-![alt text](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-/blob/master/images/lab2Flow.png)
+![json](images/lab2Flow?raw=true "Import JSON") <br />
 
 ## Description
 
 1. Let us start with reviewing the available DNA Center "Interfaces" API calls in **[Cisco documentation](https://developer.cisco.com/site/dna-center-rest-api/)** (Hint: Search for ***"Get all interfaces"*** under the ***"Devices"*** submenu). <br />
 
-2. Right-click on the following GET API call to get in-depth information about all the available data types. <br />
-<p align="center">
-    <a href="https://developer.cisco.com/site/dna-center-rest-api/"><img src="https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-/blob/master/images/newReport1.png" title="DNA Center API Calls" align="center" /></a>
-</p>
+2. From the Cisco documentation page, click on the ***"Get all interfaces"*** GET API call to get in-depth information about all the available data types. <br />
+![json](images/newReport1?raw=true "Import JSON") <br />
 
 3. Review the available data (i.e., response) of this API call. Do you see any value that may help with?
 
@@ -179,11 +177,11 @@ An example of script execution: <br />
 
 ## Script Overview
   * Prompt the user for Cisco DNA Center login information
-![alt text](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-/blob/master/images/newReport3.png)<br />
+![json](images/newReport3?raw=true "Import JSON") <br />
   * Validate login information and get the Token key
-![alt text](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-/blob/master/images/newReport4.png)<br />
+![json](images/newReport4?raw=true "Import JSON") <br />
   * Get the interfaces speed information and parse the date in a table format
-![alt text](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-/blob/master/images/newReport5.png)<br />
+![json](images/newReport5?raw=true "Import JSON") <br />
 
 ## Lab Decommission
 11. To end the Python virtual environment session, copy and paste the following command in the terminal: <br />
