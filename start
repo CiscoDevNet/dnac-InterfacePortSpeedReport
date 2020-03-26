@@ -8,8 +8,5 @@ echo " "
 
 echo "Activating Python Virtual Environment"
 source venv/bin/activate
-echo "Opening Incognito browser windows for lab"
-#killall Google\ Chrome
-open -na "Google Chrome" --args -incognito "https://172.31.37.61" "https://ciscolive-workspace.slack.com/?redir=%2Fmessages%2FCDMS29EKX%2F"
 
 echo " "

@@ -80,8 +80,6 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
 ### Lab Initialization
 7. From the terminal window, run **`./setup.sh`** to initialize the lab environment. This will create a Python virtual environment, activate it, and install prerequisites. <br />
 
-:warning:**Note: This step may take 1 - 2 minutes.**
-
 <details>
           <summary>Sample Setup Output"</summary>
 
@@ -164,7 +162,6 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
       ```
 
 ## Configuration & Usage
-
 10. Enter the following information to generate the report based on Cisco DNA Canter DevNet Sandbox environment: <br />
 
 |Prompt   | Input |
@@ -187,6 +184,9 @@ An example of script execution: <br />
 ![alt text](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-/blob/master/newReport4.png)<br />
   * Get the interfaces speed information and parse the date in a table format
 ![alt text](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-/blob/master/newReport5.png)<br />
+
+## Lab Decommission
+11. To end the Python virtual environment session, run the **`deactivate`** command.
 
 ## Technologies & Frameworks Used
 ### Cisco Products & Services:
