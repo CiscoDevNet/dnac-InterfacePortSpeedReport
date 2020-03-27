@@ -208,4 +208,4 @@ Please contact [Yossi Meloch](mailto:ymeloch@cisco.com) <br />
 :email: [Stanley Chan](stanchan@cisco.com) <br />
 
 ## Licensing info
-This project is licensed to you under the terms of the **[Cisco Sample Code License](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport/blob/master/images/LICENSE)**
+This project is licensed to you under the terms of the **[Cisco Sample Code License](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport/blob/master/LICENSE)**
