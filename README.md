@@ -17,7 +17,7 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
 2. From the **[Cisco documentation](https://developer.cisco.com/site/dna-center-rest-api/)** page, click on the ***"Get all interfaces"*** GET API call to get in-depth information about all the available data types. <br />
 ![json](images/newReport1.png?raw=true "Import JSON") <br />
 
-3. Review the available data (i.e., response) of this API call. Do you see any value that may help with?
+3. Review the available data (i.e., response) of this API call. Do you see any value that may help?
 
     ```yaml
     {
@@ -61,7 +61,7 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
 **"speed": "string"**<br />
 **Great Job, you have found it!** :thumbsup: <br /> <br />
 
-4. So what's the next step? <br /> Let us create a simple Python script which leverage the Cisco DNA Center "Get all interfaces" API call to build our custom report! <br />
+4. So what's the next step? <br /> Let us create a simple Python script that leverages the Cisco DNA Center "Get all interfaces" API call to build our custom report! <br />
 
 ## Installation
 
@@ -70,19 +70,19 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
 
 6. Clone the code to your workstation (Copy & Paste the commands below). <br />
 
-    ```concole
+    ```console
     cd /tmp
-    git clone https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-.git
-    cd dnac-InterfacePortSpeedReport-
+    git clone https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport.git
+    cd dnac-InterfacePortSpeedReport
     ```
 
 ### Lab Initialization
 7. From the terminal window, run **`./setup.sh`** to initialize the lab environment. This will create a Python virtual environment, activate it, and install prerequisites. <br />
 
 <details>
-          <summary>Sample Setup Output"</summary>
+          <summary>Sample Setup Output</summary>
 
- ```concole
+ ```console
       Setting up the workstation environment for the lab.
 
       Creating Python 3 Virtual Environment
@@ -143,7 +143,7 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
 <details>
      <summary>Sample Start Output</summary>
 
- ```concole
+ ```console
   Preparing the Workstation to Run this lab
 
   Note: This command script should be run with 'source start'
@@ -156,9 +156,9 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
 
 9. To execute the script, copy and paste the following command in the terminal: <br />
 
-     ```concole
+     ```console
      python interface-SpeedReport.py
-      ```
+     ```
 
 ## Configuration & Usage
 10. Enter the following information to generate the report based on Cisco DNA Canter DevNet Sandbox environment: <br />
@@ -170,7 +170,7 @@ The generated data can be then uploaded/integrated with cross-solutions such as 
 |Password | **`Cisco123!`** |
 
 :warning: In case of typos, please click on "control C" to stop the script execution. After that, copy and paste `python interface-SpeedReport.py` to restart this exercise. <br />
-:warning: It is recommended to expand the Terminal window to 160x70 for optimal view. <br />
+:warning: It is recommended to expand the Terminal window to 160x70 for optimal viewing. <br />
 
 An example of script execution: <br />
 ![json](images/newReport2.png?raw=true "Import JSON")
@@ -181,15 +181,15 @@ An example of script execution: <br />
 ![json](images/newReport3.png?raw=true "Import JSON") <br />
   * Validate login information and get the Token key
 ![json](images/newReport4.png?raw=true "Import JSON") <br />
-  * Get the interfaces speed information and parse the date in a table format
+  * Get the interfaces speed information and parse the data in a table format
 ![json](images/newReport5.png?raw=true "Import JSON") <br />
 
 ## Lab Decommission
 11. To end the Python virtual environment session, copy and paste the following command in the terminal: <br />
 
-     ```concole
+     ```console
      deactivate
-      ```
+     ```
 
 ## Technologies & Frameworks Used
 ### Cisco Products & Services:
@@ -208,4 +208,4 @@ Please contact [Yossi Meloch](mailto:ymeloch@cisco.com) <br />
 :email: [Stanley Chan](stanchan@cisco.com) <br />
 
 ## Licensing info
-This project is licensed to you under the terms of the **[Cisco Sample Code License](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport-/blob/master/images/LICENSE)**
+This project is licensed to you under the terms of the **[Cisco Sample Code License](https://github.com/CiscoDevNet/dnac-InterfacePortSpeedReport/blob/master/LICENSE)**
