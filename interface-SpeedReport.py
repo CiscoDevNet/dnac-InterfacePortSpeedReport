@@ -61,20 +61,25 @@ def getToken():
     return token
 
 def getInterfaceStatus(token):
-    url = "https://" + dnac_ip + "/api/v1/interface"
+    url = "https://" + dnac_ip + "/api/v1/interface?offset="
+    offset = 1
     header = {"content-type": "application/json", "X-Auth-Token":token}
-    response = requests.get(url, headers=header, verify=False)
-    if response.status_code != 200:
-        print ("Retrieve Interfaces Status \t\t \033[1;31;40m FAIL \033[0;0m")
-        sys.exit()
-    print ("Retrieve Interfaces Status \t\t \033[1;32;40m PASS \033[0;0m")
-    r_json=response.json()
-    devices = r_json["response"]
     device_list = []
-    i=0
-    for item in devices:
-            i+=1
-            device_list.append([i,item["portName"],item["portMode"],item["interfaceType"],item["status"],item["adminStatus"],item["speed"],item["vlanId"],item["ipv4Address"]])
+    while(True):
+        response = requests.get(url + str(offset), headers=header, verify=False)
+        if response.status_code != 200:
+            print ("Retrieve Interfaces Status \t\t \033[1;31;40m FAIL \033[0;0m")
+            sys.exit()
+        print ("Retrieve Interfaces Status - offset " + str(offset) + " \t\t \033[1;32;40m PASS \033[0;0m")
+        r_json=response.json()
+        devices = r_json["response"]
+        i = 0
+        for item in devices:
+            device_list.append([offset,item["portName"],item["portMode"],item["interfaceType"],item["status"],item["adminStatus"],item["speed"],item["vlanId"],item["ipv4Address"]])
+            offset += 1
+            i += 1
+        if i < 500:
+            break
     table = (tabulate.tabulate(device_list, headers=['Port Name','Port Mode','Interface Type','Oper Status', 'Admin Satus', 'Speed (Kbit/sec)', 'VLAN ID', 'IP Address'],tablefmt="fancy_grid", numalign="center"))
     return table
 
